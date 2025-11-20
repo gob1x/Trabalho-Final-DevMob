@@ -47,8 +47,8 @@ Passo a Passo:
 
 Clone o repositório:
 
-git clone [https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git](https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git)
-cd NOME_DO_REPOSITORIO
+git clone [https://github.com/gob1x/Trabalho-Final-DevMob.git](https://github.com/gob1x/Trabalho-Final-DevMob.git)
+cd Trabalho-Final-DevMob
 
 
 Instale as dependências:
@@ -87,5 +87,6 @@ src/app/pages/tarefa-form: Formulário para criar e editar tarefas.
 src/app/services: Lógica de negócios (AuthService e TarefasService).
 
 src/app/models: Definições de tipos (Interfaces TypeScript).
+
 
 Desenvolvido por: Felipe Gobi
