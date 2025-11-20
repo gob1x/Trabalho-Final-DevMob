@@ -31,19 +31,18 @@
     </div>
   </ion-list>
 
-  <div style="height: 80px;"></div>
+</ion-content>
 
-  <div slot="fixed" class="fab-container">
+<ion-footer class="ion-no-border">
+  <ion-toolbar class="footer-toolbar">
     <ion-button 
+      expand="block" 
       shape="round" 
       color="tertiary" 
-      class="custom-fab"
+      class="action-button"
       (click)="criarNova()">
-      <div class="fab-content">
-        <ion-icon name="add-circle"></ion-icon>
-        <span>Nova Tarefa</span>
-      </div>
+      <ion-icon slot="start" name="add-circle"></ion-icon>
+      Nova Tarefa
     </ion-button>
-  </div>
-
-</ion-content>
+  </ion-toolbar>
+</ion-footer>
