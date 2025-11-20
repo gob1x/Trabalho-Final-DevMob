@@ -6,7 +6,6 @@
 
 <ion-content [fullscreen]="true">
   
-  <!-- Lista de Tarefas -->
   <ion-list class="ion-padding-bottom">
     <ion-item-sliding *ngFor="let t of tarefas">
       
@@ -26,19 +25,15 @@
 
     </ion-item-sliding>
 
-    <!-- Mensagem se a lista estiver vazia -->
     <div *ngIf="tarefas.length === 0" class="empty-state">
       <ion-icon name="clipboard-outline"></ion-icon>
       <p>Sua lista está vazia.<br>Que tal adicionar algo?</p>
     </div>
   </ion-list>
 
-  <!-- Espaço extra -->
   <div style="height: 80px;"></div>
 
-  <!-- Botão "Nova Tarefa" -->
   <div slot="fixed" class="fab-container">
-    <!-- Removemos classes extra do ion-button e usamos um container interno -->
     <ion-button 
       shape="round" 
       color="tertiary" 
