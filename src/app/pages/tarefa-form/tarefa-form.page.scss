@@ -1,0 +1,11 @@
+/* src/app/pages/tarefa-form/tarefa-form.page.scss */
+
+.validation-message {
+  padding-left: 16px;
+  p {
+    color: var(--ion-color-danger);
+    font-size: 0.8em;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+}

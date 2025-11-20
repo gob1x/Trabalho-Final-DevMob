@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Acesso ao App</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding ion-text-center">
+  
+  <div class="ion-padding-vertical">
+    <h1 class="ion-no-margin">Bem-vindo</h1>
+    <p>Faça login para continuar</p>
+  </div>
+  
+  <form [formGroup]="loginForm" (ngSubmit)="fazerLogin()">
+    
+    <ion-list>
+      <ion-item>
+        <ion-input label="E-mail" labelPlacement="floating" type="email" formControlName="email" ></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-input label="Senha" labelPlacement="floating" type="password" formControlName="senha" ></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <ion-button expand="block" (click)="fazerLogin()">
+      Entrar
+    </ion-button>
+
+  </form>
+  
+</ion-content>

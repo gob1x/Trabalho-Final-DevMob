@@ -1,0 +1,7 @@
+{
+  "name": "AppFinal",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab1"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ isEdicao ? 'Editar' : 'Nova' }} Tarefa</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form [formGroup]="formTarefa" (ngSubmit)="salvar()">
+    
+    <ion-item class="ion-margin-bottom">
+      <ion-input label="Título" labelPlacement="stacked" type="text" formControlName="titulo"></ion-input>
+    </ion-item>
+    
+    <ion-item class="ion-margin-bottom">
+      <ion-textarea label="Descrição" labelPlacement="stacked" formControlName="descricao" rows="4"></ion-textarea>
+    </ion-item>
+
+    <ion-item lines="none" class="ion-margin-bottom">
+      <ion-toggle formControlName="concluida" justify="space-between">
+        Marcar como Concluída
+      </ion-toggle>
+    </ion-item>
+
+    <ion-button expand="block" type="submit" [disabled]="formTarefa.invalid">
+      Salvar
+    </ion-button>
+
+    <ion-button 
+      *ngIf="isEdicao" 
+      expand="block" 
+      color="danger" 
+      class="ion-margin-top" 
+      (click)="excluir()">
+      <ion-icon slot="start" name="trash-outline"></ion-icon>
+      Excluir Tarefa
+    </ion-button>
+
+  </form>
+</ion-content>

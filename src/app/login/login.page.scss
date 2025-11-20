@@ -1,0 +1,13 @@
+.validation-message {
+  padding-left: 16px;
+  p {
+    color: var(--ion-color-danger); 
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+}
+
+.ion-text-medium {
+    color: var(--ion-color-medium);
+    font-size: 0.9em;
+}

@@ -1,0 +1,64 @@
+.fab-container {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.extended-fab {
+  pointer-events: auto;
+  height: 56px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: none;
+  --box-shadow: 0 4px 16px rgba(var(--ion-color-tertiary-rgb), 0.4);
+  --border-radius: 50px;
+  
+  --padding-start: 24px;
+  --padding-end: 24px;
+}
+
+
+.extended-fab::part(native) {
+  display: flex;
+  align-items: center;   
+  justify-content: center; 
+}
+
+.extended-fab ion-icon {
+  font-size: 24px;
+  margin-right: 8px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  opacity: 0.6;
+
+  ion-icon {
+    font-size: 64px;
+    margin-bottom: 16px;
+    color: var(--ion-color-medium);
+  }
+
+  p {
+    text-align: center;
+    font-size: 1.1em;
+    color: var(--ion-color-medium);
+  }
+}
+
+.task-item {
+  --padding-top: 10px;
+  --padding-bottom: 10px;
+}

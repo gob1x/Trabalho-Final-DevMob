@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>Minhas Tarefas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  <ion-list class="ion-padding-bottom">
+    <ion-item-sliding *ngFor="let t of tarefas">
+      
+      <ion-item button (click)="editar(t.id)" lines="full" class="task-item">
+        <ion-label>
+          <h2>{{ t.titulo }}</h2>
+          <p>{{ t.descricao }}</p>
+        </ion-label>
+        <ion-icon name="chevron-forward-outline" slot="end" color="medium"></ion-icon>
+      </ion-item>
+
+      <ion-item-options side="end">
+        <ion-item-option color="danger" (click)="confirmarExclusao(t.id)">
+          <ion-icon slot="icon-only" name="trash"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+
+    </ion-item-sliding>
+
+    <div *ngIf="tarefas.length === 0" class="empty-state">
+      <ion-icon name="clipboard-outline"></ion-icon>
+      <p>Sua lista está vazia.<br>Que tal adicionar algo?</p>
+    </div>
+  </ion-list>
+
+  <div style="height: 80px;"></div>
+
+  <div slot="fixed" class="fab-container">
+    <ion-button 
+      shape="round" 
+      color="tertiary" 
+      class="extended-fab"
+      (click)="criarNova()">
+      <ion-icon slot="start" name="add-circle"></ion-icon>
+      Nova Tarefa
+    </ion-button>
+  </div>
+
+</ion-content>
