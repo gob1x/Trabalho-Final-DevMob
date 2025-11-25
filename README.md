@@ -43,15 +43,23 @@ Certifique-se de ter o Node.js e o Ionic CLI instalados.
 npm install -g @ionic/cli
 
 
-Passo a Passo:
+Siga para o passo de Instalar Dependências abaixo.
 
-Clone o repositório:
+Usando Arquivo Extraído (ZIP)
 
-git clone [https://github.com/gob1x/Trabalho-Final-DevMob.git](https://github.com/gob1x/Trabalho-Final-DevMob.git)
-cd Trabalho-Final-DevMob
+Baixe o arquivo .zip do projeto e extraia em uma pasta de sua preferência.
 
+Abra o terminal (CMD, PowerShell ou VS Code).
+
+Navegue até a pasta extraída:
+
+cd caminho/para/a/pasta/extraida
+
+
+Passos Finais
 
 Instale as dependências:
+(Isso baixará a pasta node_modules necessária)
 
 npm install
 
@@ -90,3 +98,4 @@ src/app/models: Definições de tipos (Interfaces TypeScript).
 
 
 Desenvolvido por: Felipe Gobi
+
