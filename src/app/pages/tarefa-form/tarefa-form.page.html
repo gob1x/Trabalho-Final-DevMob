@@ -18,7 +18,7 @@
       <ion-textarea label="Descrição" labelPlacement="stacked" formControlName="descricao" rows="4"></ion-textarea>
     </ion-item>
 
-    <ion-item lines="none" class="ion-margin-bottom">
+    <ion-item lines="none" class="ion-margin-bottom" *ngIf="isEdicao">
       <ion-toggle formControlName="concluida" justify="space-between">
         Marcar como Concluída
       </ion-toggle>
